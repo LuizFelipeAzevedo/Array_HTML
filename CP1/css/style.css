@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.inserirDados {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.sectionLista {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#tabelaTarefas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabelaTarefas th, #tabelaTarefas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabelaTarefas th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

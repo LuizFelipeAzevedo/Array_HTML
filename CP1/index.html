@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <section class="inserirDados">
+        <h1>Lista de Tarefas</h1>
+        <form id="formTarefa">
+            <label for="descricao">Descrição: <input type="text" id="descricao"></label>
+            <label for="autor">Autor: <input type="text" id="autor"></label>
+            <br>
+            <label for="departamento">Departamento: <input type="text" id="departamento"></label>
+            <label for="importancia">Importância: <input type="number" id="importancia" min="0" max="100"></label>
+            <label for="valor">Valor: <input type="number" id="valor" min="0" max="10"></label>
+            <br>
+            <label for="duracao">Duração: <input type="number" id="duracao" min="0" max="100"></label>
+            <button type="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        </form>
+    </section>
+    <section class="sectionLista">
+        <h2>Tarefas</h2>
+        <table id="tabelaTarefas">
+            <tr>
+                <th>Descrição</th>
+                <th>Autor</th>
+                <th>Departamento</th>
+                <th>Importância</th>
+                <th>Valor</th>
+                <th>Duração</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+        <button id="btnListaImportancia" type="button" onclick="criarListaImportancia()">Criar Lista de Importância</button>
+        <ol id="listaImportancia" style="display: none;"></ol>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
